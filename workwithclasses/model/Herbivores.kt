@@ -2,11 +2,14 @@ package com.example.workwithclasses.model
 
 class Herbivores(animalName: String) :
     Animals(animalName) {
-        fun drinking(animalName: String){
+        var limb:String = "" // конечности: ноги, крылья и хвосты
+        var envOfLiving:String = "" // среда обитания: вода, земля, воздух
+
+        fun drinking() {
             println("$animalName пьет воду")
         }
 
-        fun washing(animalName: String){
+        fun washing() {
             println("$animalName купается")
         }
 }
